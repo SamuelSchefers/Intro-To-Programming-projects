@@ -7,7 +7,6 @@ y_float=float(y_input)
 def Add(x,y):
     return (x+y)
 #adds x and y
-#doesnt work
 def Subtract(x,y):
     return (x-y)
 #subtracts y from x
