@@ -1,0 +1,7 @@
+Sentence=input("Please type in any sentence: ")
+print("Uppercase version of your sentence is:")
+print(Sentence.upper())
+print("Trimmed version of your sentence is:")
+print(Sentence.strip())
+print("Replaced bad with good in your sentence is:")
+print(Sentence.replace("bad","good"))
