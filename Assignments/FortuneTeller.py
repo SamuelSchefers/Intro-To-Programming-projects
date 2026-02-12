@@ -1,10 +1,10 @@
 import random
 def question_1():
-     print("Placeholder1")
+     print("What is your lucky number?")
 def question_2():
-    print("Placeholder2")
+    print("How many years into the future would you like to see?")
 def question_3():
-    print("Placeholder3")
+    print("Give me another magical number!")
 #remember to int() and float() your question values, or else this piece of shitware will break
 print("Hello user! I am a magical fortune teller")
 def fortune_teller():
