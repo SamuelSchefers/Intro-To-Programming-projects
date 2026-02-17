@@ -1,19 +1,26 @@
 import random
 def question_1():
-     print("What is your lucky number?")
+    Answer1=float(input("What is your lucky number?"))
+    while True:
+        try:
+            if Answer1 is float:
+                break #please break the try except block, and not my code... this should send it down to the return part and work
+        except TypeError:
+            print("Please enter a number.")
+    return Answer1
 def question_2():
-    print("How many years into the future would you like to see?")
+    Answer2=float(input("How many years into the future would you like to see?"))
 def question_3():
-    print("Give me another magical number!")
+    Answer3=float(input("Give me another magical number!"))
 #remember to int() and float() your question values, or else this piece of shitware will break
 print("Hello user! I am a magical fortune teller")
 def fortune_teller():
         Initiation=input("Would you like me to tell you your fortune?").strip().lower()
         if Initiation=="yes":
             print("Perfect! Allow me to ask you 3 simple questions and I shall determine your fortune!")
+            return Initiation
         elif Initiation=="no":
             print("Oh... well that's too bad!")
-            print("The fortune teller is sad now :(")
             quit()
         else:
             print("Please answer with yes or no!")
