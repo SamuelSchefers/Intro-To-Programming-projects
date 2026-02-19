@@ -32,21 +32,23 @@ def question_3():
         return Answer3
 #remember to int() and float() your question values
 print("Hello user! I am a magical fortune teller")
-def fortune_teller():
+def fortune_teller(): #function will loop itself until the user answers yes or no
         Initiation=input("Would you like me to tell you your fortune? ").strip().lower()
         if Initiation=="yes":
             print("Perfect! Allow me to ask you 3 simple questions and I shall determine your fortune!")
         elif Initiation=="no":
             print("Oh... well that's too bad!")
-            quit()
+            quit() #terminates the program when the user enters no
         else:
             print("Please answer with yes or no!")
             fortune_teller() #loops back if invalid input... works somehow
 fortune_teller() # Actually makes the function run
-print("The experiment with the glowing cats") #yes im going to keep using this as a placeholder to tell when parts ot the code run correctly
-question_1()
-question_2()
-question_3()
+question_1() #the 3 questions run after the user enters yes and breaks the loop
+question_2() #without terminating the program
+question_3() #probably janky, but it works.
+Random_Number=random.randint(1,6)
+print("testing" + str(Random_Number))
+Fortune_Calculation=#deal with ts later, divide q2/q1 and q3 by random, add the results
 #writing the 5 possible fortunes here
 #"I forsee a terrible accident at sea that leaves you and 3 others stranded on a deserted island forever, never to be rescued!"
 #"I forsee a grand future full of love and happiness, and immense wealth beyond your wildest dreams!"
